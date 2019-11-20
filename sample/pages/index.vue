@@ -17,6 +17,10 @@
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey">GitHub</a>
+        <a
+          href="http://localhost:3000/users"
+          target="_blank"
+          class="button--green">Users</a>
       </div>
     </div>
   </section>
