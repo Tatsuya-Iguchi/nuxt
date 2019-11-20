@@ -4,6 +4,7 @@
       <h1>usersのindexページです。</h1>
       <p>count={{count}}</p>
       <button @click="addCount">カウントアップ</button>
+      <button @click="subtractCount">カウントダウン</button>
     </div>
   </section>
 </template>
@@ -16,6 +17,9 @@
     methods: {
       addCount (e) {
         this.$store.commit('counter/add')
+      },
+      subtractCount (e) {
+        this.$store.commit('counter/subtract')
       }
     }
   }
