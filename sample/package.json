@@ -12,11 +12,19 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "testc": "jest --config jest.config.js",
+    "test": "jest"
   },
   "dependencies": {
+    "@vue/cli": "^4.0.5",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-jest": "^24.9.0",
+    "babel-preset-vue-app": "^2.0.0",
+    "jest": "^24.9.0",
     "nuxt": "^2.0.0",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-jest": "^3.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",

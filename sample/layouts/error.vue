@@ -2,7 +2,9 @@
   <div class="container">
     <h1 v-if="error.statusCode === 404">ページが見つかりません</h1>
     <h1 v-else>エラーが発生しました</h1>
-    <nuxt-link to="/">ホーム</nuxt-link>
+    <div class="links">
+      <nuxt-link to="/">ホーム</nuxt-link>
+    </div>
   </div>
 </template>
 
@@ -12,3 +14,7 @@
     layout: 'blog' // エラーページ用のカスタムレイアウトを指定できます
   }
 </script>
+
+<style>
+
+</style>
