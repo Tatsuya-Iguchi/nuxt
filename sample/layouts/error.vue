@@ -7,8 +7,8 @@
 </template>
 
 <script>
-export default {
-  props: ['error'],
-  layout: 'blog' // エラーページ用のカスタムレイアウトを指定できます
-}
+  export default {
+    props: ['error'],
+    layout: 'blog' // エラーページ用のカスタムレイアウトを指定できます
+  }
 </script>
