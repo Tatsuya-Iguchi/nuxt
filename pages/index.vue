@@ -1,12 +1,18 @@
 <template>
   <div class="container">
-    <logo />
-    <h1 class="title">
-      nuxt-p
-    </h1>
-    <h2 class="subtitle">
-      nuxt
-    </h2>
+    <div class="item">
+      <logo />
+    </div>
+    <div class="item">
+      <h1 class="title">
+        nuxt-p
+      </h1>
+    </div>
+    <div class="item">
+      <h2 class="subtitle">
+        nuxt
+      </h2>
+    </div>
     <div class="item">
       <a href="https://nuxtjs.org" target="_blank" class="button--green">
         Documentation
@@ -39,8 +45,8 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -66,5 +72,8 @@ export default {
 
 .item {
   padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 }
 </style>
