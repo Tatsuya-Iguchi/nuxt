@@ -39,8 +39,8 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 300px 300px 1fr;
-  grid-template-columns: 300px 300px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
   text-align: center;
