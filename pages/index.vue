@@ -1,25 +1,25 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        nuxt-p
-      </h1>
-      <h2 class="subtitle">
-        nuxt
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    <logo />
+    <h1 class="title">
+      nuxt-p
+    </h1>
+    <h2 class="subtitle">
+      nuxt
+    </h2>
+    <div class="item">
+      <a href="https://nuxtjs.org" target="_blank" class="button--green">
+        Documentation
+      </a>
+    </div>
+    <div class="item">
+      <a
+        href="https://github.com/nuxt/nuxt.js"
+        target="_blank"
+        class="button--grey"
+      >
+        GitHub
+      </a>
     </div>
   </div>
 </template>
@@ -38,7 +38,9 @@ export default {
 .container {
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-rows: 300px 300px 1fr;
+  grid-template-columns: 300px 300px 1fr;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -62,7 +64,7 @@ export default {
   padding-bottom: 15px;
 }
 
-.links {
+.item {
   padding-top: 15px;
 }
 </style>
