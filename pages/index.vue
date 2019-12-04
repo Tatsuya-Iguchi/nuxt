@@ -3,13 +3,16 @@
     <div class="l-item l-header b-background-gray">
       <h1 class="m-font-big">hogehoge</h1>
     </div>
-    <div class="item">
-      <logo />
+    <div class="l-item">
+      <logo class="m-icon-midium" />
     </div>
     <div class="l-item">
       <h1 class="m-font-big t-title-blue">
         nuxt-p
       </h1>
+    </div>
+    <div class="l-item">
+      <Seikaku class="m-icon-midium" />
     </div>
     <div class="l-item">
       <h2 class="m-font-big t-title-blue">
@@ -38,10 +41,12 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Seikaku from '~/assets/image/Seikaku.svg'
 
 export default {
   components: {
-    Logo
+    Logo,
+    Seikaku
   }
 }
 </script>
@@ -59,27 +64,29 @@ export default {
   display: grid;
   grid-template-rows: 60px repeat(3, 1fr) 60px;
   grid-auto-rows: 600px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
 .l-item {
   display: inline-grid;
+  align-items: center;
+  justify-items: center;
   min-width: 300px;
+  text-align: center;
 }
 
 .l-header {
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
 .l-footer {
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 4;
   grid-row-start: 5;
   grid-row-end: 6;
 }
@@ -94,6 +101,12 @@ export default {
   letter-spacing: 1px;
 }
 
+.m-icon-midium {
+  text-align: center;
+  height: 160px;
+  width: 160px;
+  max-width: 50%;
+}
 /* State prefix: s- */
 /* Theme prefix: t- */
 .t-title-blue {
