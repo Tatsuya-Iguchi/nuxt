@@ -1,6 +1,6 @@
 <template>
   <div class="l-container">
-    <div class="l-item l-header">
+    <div class="l-item l-header b-background-gray">
       <h1 class="m-font-big">hogehoge</h1>
     </div>
     <div class="item">
@@ -30,7 +30,7 @@
         GitHub
       </a>
     </div>
-    <div class="l-item l-footer">
+    <div class="l-item l-footer b-background-gray">
       <h1 class="m-font-big">fugafuga</h1>
     </div>
   </div>
@@ -48,12 +48,17 @@ export default {
 
 <style>
 /* Base prefix: b- */
+.b-background-gray {
+  background: #aaaaaa;
+}
 /* Layout prefix: l- */
 .l-container {
   margin: 0 auto;
   min-height: 100vh;
+  min-width: 100vh;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 60px repeat(3, 1fr) 60px;
+  grid-auto-rows: 600px;
   grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   align-items: center;
@@ -61,10 +66,8 @@ export default {
 }
 
 .l-item {
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+  display: inline-grid;
+  min-width: 300px;
 }
 
 .l-header {
@@ -77,8 +80,8 @@ export default {
 .l-footer {
   grid-column-start: 1;
   grid-column-end: 6;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
 }
 
 /* Module prefix: m- */
@@ -87,7 +90,7 @@ export default {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: grid;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 36px;
   letter-spacing: 1px;
 }
 
